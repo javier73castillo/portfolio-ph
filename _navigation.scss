@@ -1,0 +1,40 @@
+.nav{
+    display: flex;
+    //space-betwen
+    justify-content: space-betwen;
+    margin: 10px 0;
+    max-width: 50%;
+    &__list{
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        max-width: 50%;
+        &__items{
+            display: flex;
+            margin: $margin-nav;
+            font-size: $size-nav;
+            font-family: $family-nav;
+            margin-left: 5px;
+            @include tablet {
+                font-size: $size-nav-tablet;
+                margin-left: 15px;
+            }
+            @include desktop {
+                font-size: $size-nav-desktop;
+                margin-left: 30px;
+            }
+            
+        }
+    }
+
+a {
+    text-decoration: none;
+    color: black;
+    }
+}
+a:visited{ color: black} 
+a:hover {
+    color: rgb(104, 103, 36);
+
+
+}

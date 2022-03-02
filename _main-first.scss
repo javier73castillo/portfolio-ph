@@ -1,0 +1,221 @@
+a {
+    text-decoration: none;
+    color: black;
+    }
+
+a:visited{ color: black}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  @include desktop {
+    flex-direction: column;
+      }
+  
+  .article__first {
+    display: flex;
+    max-width: 90%;
+    padding: 20px;
+    border-top-left-radius: 15px;
+    background-color: $back-art-color;
+        @include tablet {
+          flex-wrap: wrap;
+          }
+        @include desktop {
+          display: flex;
+          justify-content: space-around;
+          }
+  
+    &__img {
+      display: flex;
+      max-width: 50%;
+      margin: 5px;
+      justify-content: center;
+
+      &__first {
+        width: 100%;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+        object-fit: cover;
+        @include desktop  {
+          max-width: 80%;
+          align-items: left;
+        }
+        @include tablet {
+          max-width: 90%;
+          
+          
+        }
+      }
+    }
+    .article__first__title {
+      display: flex;
+      justify-content:space-around;
+      width: 550px;
+      margin: 5px;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      @include tablet {
+        max-width: 45%;
+        flex-direction: row;
+        flex-direction: column;
+      }
+      @include desktop {
+        max-width: 45%;
+
+      }
+      .first__title_container {
+        display: flex;
+        max-width:600px;
+        margin-top: 20px;
+        @include tablet {
+          max-width: 100%;
+          justify-content: space-around;
+        }
+        
+        &__first {
+          max-width: 100%;
+          font-size: $size-h1-mobile;
+          color: brown;
+          
+          @include tablet {
+            max-width: 45%;
+            font-size: 79px;
+            
+            
+          }
+          @include desktop {
+            font-size: 20px;
+            
+          }
+     
+        }
+       
+        
+        
+      .btn-books {
+        display: flex;
+        background-color: rgb(192, 182, 182);
+        color: rgba(10, 10, 10, 0.753);
+        border: none;
+        width:100px;
+        margin: 10px;
+        border-radius: 10px;
+        justify-content: center;
+        font-family: $family-nav;
+        font-size: $size-nav;
+        
+        @include tablet {
+          font-size: $size-nav-tablet;
+          width: 230px;
+          
+        }
+        @include desktop {
+          font-size: $size-nav-desktop;
+          width: 350px;
+        }
+        
+        
+      }
+      .btn-books:hover {
+        color: rgb(134, 136, 40);
+      }
+    }
+    
+        .description-desktop {
+          display: none;
+          @include tablet {
+            display: flex;
+            color: $headline;
+            font-family: $family-h2-desk-description;
+            font-size: $size-h2-mobile;
+            padding: 0 0 20px 0;
+            font-size: $size-h2-tb-description;
+          }
+          @include desktop {
+            display: flex;
+            color: $headline;
+            font-family: $family-h2-desk-description;
+            font-size: $size-h2-mobile;
+            padding: 0 0 20px 0;
+            font-size: $size-h2-desk-description;
+          }
+      
+      }
+     
+      
+      
+    .article__first__title__first {
+        color: $headline;
+        font-family: $font-h1;
+        font-size: $size-h1-mobile;
+        text-align: right;
+        max-width: 100%;
+        margin: 5px;
+        
+        @include tablet {
+          max-width: 80%;
+          font-size: $size-h1-tablet;
+        }
+        @include desktop  {
+          font-size: $size-h1-desk;
+          
+        } 
+      }
+      .font-h2{
+            display:flex;
+            color: $headline;
+            font-family: $font-h1;
+            font-size: 9px;
+            text-align: right;
+        @include tablet {
+          display: none;
+          
+        }
+        @include desktop {
+          display: none;
+        }
+        
+      }
+      }
+    }
+  }
+  
+  .article__second{
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    justify-content: space-evenly;
+    
+    @include desktop {
+      display: flex;
+      justify-content: space-around;
+      
+    }
+
+    &__presentation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-size: $size-p ;
+            color:$paragraph;
+            font-family: $family-p;
+            text-align: $align-p;
+            padding: 5px;
+            max-width: 80%;
+            @include tablet {
+              font-size: $size-p-tablet;
+            }
+            @include desktop {
+              font-size: $size-p-desk;}
+        }
+    }
+    
+  }
+
+ 
+
+

@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+ align-items: center;
+  
+  .logo {
+    display: flex;
+    align-content: center;
+    max-width: 40%;
+    @include tablet {
+      max-width: 40%;
+    }
+    @include desktop {
+      max-width: 100%;
+    }
+    .logo__img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  
+}

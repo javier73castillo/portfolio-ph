@@ -1,0 +1,56 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 10px;
+        .footer_redes {
+            display: flex;
+            max-width: 80%;
+            align-items: center;
+            margin: 10px;
+            justify-content: space-around;
+            @include tablet {
+                max-width: 30%;
+            }
+            @include desktop {
+                max-width: 30%;
+            }
+                       
+            &_icons {
+                display: flex;
+                max-width: 10%;
+                @include tablet {
+                    max-width: 20%;
+                }
+                @include desktop {
+                    max-width: 15%;
+                }
+                
+            &_img{
+                    width: 100%;
+                                       
+                }
+                
+            }
+        }
+
+        .parrafo_foot {
+            display: flex;
+           justify-content: center;
+           align-items: center;
+            max-width: 80%;
+            margin-top: 10px;
+            &_copyright{
+                font-size: $size-p-foot;
+                text-align: center;
+                @include tablet {
+                    font-size: $size-p-foot-tablet;
+                }
+                @include desktop {
+                    font-size: $size-p-foot-desk;
+                }
+               
+            }
+
+        }
+}
